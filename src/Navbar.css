@@ -1,0 +1,92 @@
+.hero {
+  width: 100%;
+}
+
+.heroNav {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroNav h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.heroNav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #3a2b58;
+}
+
+.hero button:hover {
+  background: #64bb3b3b;
+}
+
+.navBar__body {
+  height: 8vh;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 800px;
+  justify-content: space-evenly;
+}
+
+.navBar__dropdown button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  transition: 0.3s;
+}
+
+.heroNav a,
+.navBar_btn a {
+  text-decoration: none;
+}
+
+.navBar_btn h1 {
+  font-size: 20px;
+  color: white;
+}
+
+/* .navBar_btn .MuiSvgIcon-root {
+  color: white;
+} */
+
+.navBar a:hover,
+.navBar__dropdown:hover .navBar_btn {
+  background-color: #06d69ed7;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar__title {
+    display: none;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navBar {
+    width: 100vw;
+  }
+}
